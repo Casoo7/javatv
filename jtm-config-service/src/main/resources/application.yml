@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/827969491/JavaTVMach.git
+          uri: https://github.com/Casoo7/javatv.git
           search-paths: config-repo
           username: 
           password: 
