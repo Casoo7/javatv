@@ -1,6 +1,10 @@
 spring: 
   application: 
     name: jtm-match-service
+  security:
+    user:
+      name: javatvadmin
+      password: javatvadmin
 server: 
   port: 9000
 eureka: 
@@ -10,5 +14,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url: 
-      defaultZone: http://${eureka.instance.hostname}:9000/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:9000/eureka/
       
