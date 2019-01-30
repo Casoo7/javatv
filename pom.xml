@@ -7,7 +7,7 @@
   	<packaging>pom</packaging>
   	<modules>
 
-  	<module>jtm-match-service</module>
+  	<module>jtm-eureka-service</module>
     <module>jtm-query-service</module>
     <module>jtm-config-service</module>
     <module>jtm-common</module>

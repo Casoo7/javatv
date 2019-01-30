@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: jtm-match-service
+Implementation-Title: jtm-eureka-service
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: yangri
 Implementation-Vendor-Id: javatv
