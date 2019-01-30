@@ -3,8 +3,8 @@ spring:
     name: jtm-match-service
   security:
     user:
-      name: javatvadmin
-      password: javatvadmin
+      name: javatv
+      password: javatv
 server: 
   port: 9000
 eureka: 

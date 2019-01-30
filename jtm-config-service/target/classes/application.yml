@@ -3,6 +3,10 @@ server:
 spring: 
   application:
     name: jtm-config-service
+  security: 
+    user:
+      name: javatv
+      password: javatv
   cloud:
     config:
       server:
@@ -14,7 +18,9 @@ spring:
         default-label: master
       label: master
 eureka: 
+  instance:
+    hostname: localhost
   client: 
     service-url: 
-      defaultZone: http://localhost:9000/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:9000/eureka/
         
