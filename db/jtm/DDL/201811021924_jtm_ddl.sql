@@ -1,5 +1,5 @@
 ﻿DROP TABLE IF EXISTS `JTBmatch`;
-CREATE TABLE `JTBmatch` ( 
+CREATE TABLE `JBmatch` ( 
 	`MatchId` int NOT NULL AUTO_INCREMENT,
 	`MatchName` varchar(100) DEFAULT NULL,
 	`NatchDate` datetime DEFAULT NULL,
@@ -12,8 +12,8 @@ CREATE TABLE `JTBmatch` (
 	PRIMARY KEY (`MatchId`)
 )	ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `JTBsigleplayer`;
-CREATE TABLE `JTBsigleplayer` ( 
+DROP TABLE IF EXISTS `JBsigleplayer`;
+CREATE TABLE `JBsigleplayer` ( 
 	`Playerid` int NOT NULL AUTO_INCREMENT,
 	`Playername` varchar(20)	DEFAULT NULL,
 	`Matchid` int	NOT NULL,
@@ -40,8 +40,8 @@ CREATE TABLE `JTBsigleplayer` (
 	PRIMARY KEY (`Playerid`,`Matchid`)
 )	ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `JTBplayer`;
-CREATE TABLE `JTBplayer` ( 
+DROP TABLE IF EXISTS `JBplayer`;
+CREATE TABLE `JBplayer` ( 
 	`Playerid` int NOT NULL AUTO_INCREMENT,
 	`Playername` Varchar(20)	DEFAULT NULL,
 	`Playersex` Varchar(2)	DEFAULT NULL,
