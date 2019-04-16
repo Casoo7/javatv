@@ -6,5 +6,6 @@
     <file url="file://$PROJECT_DIR$/jtm-config-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jtm-eureka-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jtm-query-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jtm-zuul-service" charset="UTF-8" />
   </component>
 </project>
