@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/javatv.iml" filepath="$PROJECT_DIR$/javatv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtm-common/jtm-common.iml" filepath="$PROJECT_DIR$/jtm-common/jtm-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtm-config-service/jtm-config-service.iml" filepath="$PROJECT_DIR$/jtm-config-service/jtm-config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtm-eureka-service/jtm-eureka-service.iml" filepath="$PROJECT_DIR$/jtm-eureka-service/jtm-eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtm-query-service/jtm-query-service.iml" filepath="$PROJECT_DIR$/jtm-query-service/jtm-query-service.iml" />
+    </modules>
+  </component>
+</project>

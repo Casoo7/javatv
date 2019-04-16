@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="4096" />
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-ea" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jtm-config-service" />
+        <module name="jtm-common" />
+        <module name="jtm-eureka-service" />
+        <module name="jtm-query-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="javatv" target="1.8" />
+      <module name="jtm-common" target="1.8" />
+      <module name="jtm-config-service" target="1.8" />
+      <module name="jtm-eureka-service" target="1.8" />
+      <module name="jtm-query-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jtm-common" options="-parameters" />
+      <module name="jtm-config-service" options="-parameters" />
+      <module name="jtm-eureka-service" options="-parameters" />
+      <module name="jtm-query-service" options="-parameters" />
+    </option>
+  </component>
+</project>
