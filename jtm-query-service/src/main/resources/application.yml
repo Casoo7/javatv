@@ -1,5 +1,14 @@
 spring: 
   application: 
     name: ${jtm.application.name}
+  datasource:
+    type: ${jtm.datasource.type}
+    driver-class-name: ${jtm.datasource.driver-class-name}
+    username: ${usp.datasource.username}
+    password: ${usp.datasource.password}
+    initialSize: 
+    dbcp2:
+      min-idle: 5
 server: 
   port: ${jtm.server.port}
+  

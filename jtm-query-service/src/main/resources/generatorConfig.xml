@@ -22,7 +22,9 @@
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 		
-		<table tableName="lccontother" domainObjectName="LCContOther"></table>
+		<table tableName="jbmatch" domainObjectName="JBMatch"></table>
+		<table tableName="jbsigleplayer" domainObjectName="JBSiglePlayer"></table>
+		<table tableName="jbplayer" domainObjectName="JBPlayer"></table>
 	</context>
 </generatorConfiguration>
 
