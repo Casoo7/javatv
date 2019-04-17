@@ -6,9 +6,10 @@ spring:
     driver-class-name: ${jtm.datasource.driver-class-name}
     username: ${usp.datasource.username}
     password: ${usp.datasource.password}
-    initialSize: 
+    initialSize:
     dbcp2:
       min-idle: 5
+    url: ${jtm.datasource.url}
 server: 
   port: ${jtm.server.port}
   
