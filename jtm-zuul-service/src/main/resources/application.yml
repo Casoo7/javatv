@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+server:
+  port: 9003
+spring:
+  application:
+    name: jtm-service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: jtm-config-service
+    api-b:
+      path: /api-b/**
+      serviceId: jtm-config-service
