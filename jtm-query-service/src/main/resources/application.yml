@@ -4,8 +4,8 @@ spring:
   datasource:
     type: ${jtm.datasource.type}
     driver-class-name: ${jtm.datasource.driver-class-name}
-    username: ${usp.datasource.username}
-    password: ${usp.datasource.password}
+    username: ${jtm.datasource.username}
+    password: ${jtm.datasource.password}
     initialSize:
     dbcp2:
       min-idle: 5
