@@ -13,5 +13,5 @@ spring:
 server: 
   port: ${jtm.server.port}
 mybatis:
-  config-location: classpath*:config/mybatis-config.xml
-  mapper-locations: classpath:mapper/*Mapper.xml
+  config-location: classpath:/config/mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml

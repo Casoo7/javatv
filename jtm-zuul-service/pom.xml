@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.jtm</groupId>
-    <artifactId>zuul</artifactId>
+    <artifactId>jtm-zuul-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>zuul</name>
+    <name>jtm-zuul-service</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

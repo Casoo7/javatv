@@ -19,6 +19,12 @@ public class QueryController {
 	
 	@RequestMapping("/query")
 	public String hi(){
+		JBMatch jbMatch = new JBMatch();
+		jbMatch.setBuleteam("JDG");
+		jbMatch.setRedteam("IG");
+		jbMatch.setMaketime(DateUtil.getCurrentDate());
+		jbMatch.setModifytime(DateUtil.getCurrentDate());
+		jbMatchMapper.insert(jbMatch);
 		return jBMatchDao.findNameById("1");
 	}
 }

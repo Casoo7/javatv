@@ -3,8 +3,6 @@ package com.jtm.mapper;
 import com.jtm.dto.JBMatch;
 import com.jtm.dto.JBMatchExample;
 import java.util.List;
-
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 public interface JBMatchMapper {
