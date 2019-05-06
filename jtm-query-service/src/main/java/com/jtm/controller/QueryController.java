@@ -19,6 +19,7 @@ public class QueryController {
 	
 	@RequestMapping("/query")
 	public String hi(){
+		System.out.println("测试！！！！！");
 		JBMatch jbMatch = new JBMatch();
 		jbMatch.setBuleteam("JDG");
 		jbMatch.setRedteam("IG");
