@@ -1,6 +1,8 @@
 package com.jtm.controller;
 
 import com.jtm.mapper.JBMatchDao;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +14,7 @@ import com.jtm.util.DateUtil;
 
 @RestController
 public class QueryController {
+	private static Logger log = LoggerFactory.getLogger(QueryController.class);
 	@Autowired
 	private JBMatchDao jBMatchDao;
 	@Autowired
@@ -20,6 +23,11 @@ public class QueryController {
 	@RequestMapping("/query")
 	public String hi(){
 		System.out.println("测试！！！！！");
+		log.debug("debug");
+		log.info("info");
+		log.error("error");
+		log.warn("warn");
+		log.trace("trace");
 		JBMatch jbMatch = new JBMatch();
 		jbMatch.setBuleteam("JDG");
 		jbMatch.setRedteam("IG");
