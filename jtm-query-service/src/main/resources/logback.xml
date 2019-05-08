@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
+    <timestamp key="startTime" datePattern="yyyyMMdd'T'HHmmss"/>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoder 默认配置为PatternLayoutEncoder -->
         <encoder>
@@ -6,11 +8,23 @@
         </encoder>
     </appender>
 
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>query.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>query.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>5</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg [%file:%line] %n</pattern>
+        </encoder>
+    </appender>
+
     <!-- logback为java中的包 -->
-    <logger name="com..jtm"/>
+    <logger name="com.jtm.controller"/>
     <!--logback.LogbackDemo：类的全路径 -->
-    <logger name="com..jtm.controller.QueryController" level="DEBUG" additivity="false">
-        <appender-ref ref="STDOUT"/>
+    <logger name="com.jtm.controller.QueryController" level="DEBUG" additivity="true">
+        <appender-ref ref="FILE"/>
     </logger>
 
     <root level="INFO">
