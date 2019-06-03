@@ -1,0 +1,8 @@
+2019-05-22 16:59:25.864 [http-nio-auto-1-exec-1] DEBUG com.jtm.controller.QueryController - debug [QueryController.java:26] 
+2019-05-22 16:59:25.866 [http-nio-auto-1-exec-1] INFO  com.jtm.controller.QueryController - info [QueryController.java:27] 
+2019-05-22 16:59:25.866 [http-nio-auto-1-exec-1] ERROR com.jtm.controller.QueryController - error [QueryController.java:28] 
+2019-05-22 16:59:25.866 [http-nio-auto-1-exec-1] WARN  com.jtm.controller.QueryController - warn [QueryController.java:29] 
+2019-05-22 17:15:34.681 [http-nio-auto-1-exec-1] DEBUG com.jtm.controller.QueryController - debug [QueryController.java:26] 
+2019-05-22 17:15:34.683 [http-nio-auto-1-exec-1] INFO  com.jtm.controller.QueryController - info [QueryController.java:27] 
+2019-05-22 17:15:34.684 [http-nio-auto-1-exec-1] ERROR com.jtm.controller.QueryController - error [QueryController.java:28] 
+2019-05-22 17:15:34.684 [http-nio-auto-1-exec-1] WARN  com.jtm.controller.QueryController - warn [QueryController.java:29] 
