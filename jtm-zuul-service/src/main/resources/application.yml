@@ -1,17 +1,21 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:9000/eureka/
 server:
   port: 9003
 spring:
   application:
     name: jtm-service-zuul
+  security:
+    user:
+      name: javatv
+      password: javatv
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:9000/eureka/
 zuul:
   routes:
     api-a:
       path: /api-a/**
-      serviceId: jtm-config-service
+      serviceId: jtm-query-service
     api-b:
       path: /api-b/**
-      serviceId: jtm-config-service
+      serviceId: jtm-query-service

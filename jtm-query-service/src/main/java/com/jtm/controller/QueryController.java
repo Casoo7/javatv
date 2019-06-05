@@ -19,10 +19,14 @@ public class QueryController {
 	private JBMatchDao jBMatchDao;
 	@Autowired
 	private JBMatchMapper jbMatchMapper;
-	
+
+	// 压力测试游标
+	int a = 0;
+
 	@RequestMapping("/query")
 	public String hi(){
-		System.out.println("测试！！！！！");
+		a++;
+		System.out.println("测试！！！！！第"+a+"次！");
 		log.debug("debug");
 		log.info("info");
 		log.error("error");
