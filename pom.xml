@@ -12,7 +12,8 @@
     <module>jtm-config-service</module>
 	<module>jtm-zuul-service</module>
     <module>jtm-common</module>
-  </modules>
+	<module>jtm-match-service</module>
+    </modules>
 
   	<parent>
 		<groupId>org.springframework.boot</groupId>
