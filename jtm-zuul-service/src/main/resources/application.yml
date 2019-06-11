@@ -14,8 +14,8 @@ eureka:
 zuul:
   routes:
     api-a:
-      path: /api-a/**
-      serviceId: jtm-query-service
+      path: /match/**
+      serviceId: jtm-match-service
     api-b:
-      path: /api-b/**
+      path: /query/**
       serviceId: jtm-query-service
