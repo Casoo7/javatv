@@ -48,6 +48,12 @@
     </dependencies>
 
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
         <!-- 配置需要被替换的资源文件路径  *.properties -->
         <resources>
             <resource>
