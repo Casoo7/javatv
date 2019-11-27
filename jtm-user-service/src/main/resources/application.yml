@@ -1,0 +1,32 @@
+
+server:
+  port: ${jtm.server.port}
+spring:
+  application:
+    name: ${jtm.application.name}
+  datasource:
+    druid:
+      url: ${jtm.datasource.url}
+      type: ${jtm.datasource.type}
+      driver-class-name: ${jtm.datasource.driver-class-name}
+      username: ${jtm.datasource.username}
+      password: ${jtm.datasource.password}
+      min-idle: 5
+      initial-size: 5
+      max-idle: 20
+      max-wait-millis: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      filters: stat,wall,log4j
+      use-global-data-source-stat: true
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connect-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+mybatis:
+  config-location: classpath:/config/mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml

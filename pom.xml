@@ -7,12 +7,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-
         <module>jtm-eureka-service</module>
         <module>jtm-query-service</module>
         <module>jtm-config-service</module>
         <module>jtm-zuul-service</module>
         <module>jtm-common</module>
+        <module>jtm-user-service</module>
         <module>jtm-match-service</module>
     </modules>
 

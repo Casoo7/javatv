@@ -14,11 +14,11 @@
 			<property name="enableSubPackages" value="false" />
 		</javaModelGenerator>
 		<sqlMapGenerator targetPackage="${mybatis.xml}"
-			targetProject="../jtm-query-service/src/main/resources">
+			targetProject="../jtm-user-service/src/main/resources">
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
 		<javaClientGenerator targetPackage="${mybatis.mapper}"
-			targetProject="../jtm-query-service/src/main/java" type="XMLMAPPER">
+			targetProject="../jtm-user-service/src/main/java" type="XMLMAPPER">
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 		

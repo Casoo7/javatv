@@ -10,8 +10,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jtm-query-service</artifactId>
-    <name>jtm-query-service</name>
+    <artifactId>jtm-user-service</artifactId>
+    <name>jtm-user-service</name>
     <url>http://maven.apache.org</url>
 
     <properties>
