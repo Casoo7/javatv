@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天页面</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+<body>
+    <div id="messageDiv" style="display: none">
+        <form name="fm" id="fm">
+            <div align="left">
+                <textarea rows="30" cols="100" id="messageFrame" name="messageFrame" readnoly="true"></textarea>
+            </div>
+            <br>
+            <div align="left">
+                <input type="text" id="receiptor" name="receiptor" placeholder="输入接收者名称">
+                <br>
+                <input type="text" id="message" name="message" placeholder="输入信息">
+                <button type="button" onclick="send()">发送</button>
+            </div>
+            <input type="hidden" id="name1" name="name1">
+        </form>
+    </div>
+
+    <div id="setNameDiv" style="display: ">
+            <h3>请输入您的名称：</h3>
+            <input type="text" id="name">
+            <button type="button" onclick="setName()">提交</button>
+    </div>
+</body>
+</html>
